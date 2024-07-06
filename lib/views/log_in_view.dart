@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvc_app/constants/routes.dart';
 import '../controllers/auth_controller.dart';
 
 class LoginView extends StatefulWidget {
@@ -40,13 +41,13 @@ class _LoginViewState extends State<LoginView> {
                   email: _emailController.text,
                   password: _passwordController.text,
                 );
-                
+
                 if (result == null) {
                   print('Sign in failed');
                 } else {
                   Navigator.pushReplacementNamed(
                     context,
-                    '/home',
+                    AppRoutes.home,
                   );
                 }
               },

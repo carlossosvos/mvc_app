@@ -14,7 +14,7 @@ class AuthService {
         : null;
   }
 
-  // stream que esta pendiente de los cambios en el usuario de firebase
+  // stream que está pendiente de los cambios en el usuario de firebase
   Stream<UserModel?> get user {
     return _auth.authStateChanges().map(_userFromFirebaseUser);
   }

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "161462075630",
-    "project_id": "mymvcapp-59407",
-    "storage_bucket": "mymvcapp-59407.appspot.com"
+    "project_number": "921598381469",
+    "project_id": "mvc-app-2",
+    "storage_bucket": "mvc-app-2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:161462075630:android:d54c8e946b0c750f8bf3ff",
+        "mobilesdk_app_id": "1:921598381469:android:7b0edc1a6a0f527ee1f374",
         "android_client_info": {
           "package_name": "com.example.mvc_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyASnjMXHrlCVvOW0zz8h-GiQQK89gzWBQg"
+          "current_key": "AIzaSyAedH-rOONXDzGMbEelZFGefFITqowFvpc"
         }
       ],
       "services": {

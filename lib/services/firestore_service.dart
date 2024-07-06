@@ -25,6 +25,6 @@ class FirestoreService<T extends FirestoreModel> {
 
   Stream<List<T>> getItems() {
     return _db.collection(collectionPath).snapshots().map((snapshot) =>
-        snapshot.docs.map((doc) => fromMap(doc.data()!, doc.id)).toList());
+        snapshot.docs.map((doc) => fromMap(doc.data(), doc.id)).toList());
   }
 }

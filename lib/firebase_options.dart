@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyASnjMXHrlCVvOW0zz8h-GiQQK89gzWBQg',
-    appId: '1:161462075630:android:d54c8e946b0c750f8bf3ff',
-    messagingSenderId: '161462075630',
-    projectId: 'mymvcapp-59407',
-    storageBucket: 'mymvcapp-59407.appspot.com',
+    apiKey: 'AIzaSyAedH-rOONXDzGMbEelZFGefFITqowFvpc',
+    appId: '1:921598381469:android:7b0edc1a6a0f527ee1f374',
+    messagingSenderId: '921598381469',
+    projectId: 'mvc-app-2',
+    storageBucket: 'mvc-app-2.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCKRs0D8LkEDENQbhu-XWwlBbuvQbtpUDA',
-    appId: '1:161462075630:ios:3bfd23bfec7748988bf3ff',
-    messagingSenderId: '161462075630',
-    projectId: 'mymvcapp-59407',
-    storageBucket: 'mymvcapp-59407.appspot.com',
+    apiKey: 'AIzaSyDPNu_9ijfN8IgzmpohXMIAgq4jLemJOFo',
+    appId: '1:921598381469:ios:100770aa40826f36e1f374',
+    messagingSenderId: '921598381469',
+    projectId: 'mvc-app-2',
+    storageBucket: 'mvc-app-2.appspot.com',
     iosBundleId: 'com.example.mvcApp',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCuwlhcz1ArlztZ0h7pmSLqN-6sHyV4BQc',
+    appId: '1:921598381469:web:89b4dfe0db6ef6e1e1f374',
+    messagingSenderId: '921598381469',
+    projectId: 'mvc-app-2',
+    authDomain: 'mvc-app-2.firebaseapp.com',
+    storageBucket: 'mvc-app-2.appspot.com',
+    measurementId: 'G-0LVLBBFJRC',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDPNu_9ijfN8IgzmpohXMIAgq4jLemJOFo',
+    appId: '1:921598381469:ios:100770aa40826f36e1f374',
+    messagingSenderId: '921598381469',
+    projectId: 'mvc-app-2',
+    storageBucket: 'mvc-app-2.appspot.com',
+    iosBundleId: 'com.example.mvcApp',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCuwlhcz1ArlztZ0h7pmSLqN-6sHyV4BQc',
+    appId: '1:921598381469:web:cb78ff61ead0213be1f374',
+    messagingSenderId: '921598381469',
+    projectId: 'mvc-app-2',
+    authDomain: 'mvc-app-2.firebaseapp.com',
+    storageBucket: 'mvc-app-2.appspot.com',
+    measurementId: 'G-3TN0HLZC75',
+  );
+
 }

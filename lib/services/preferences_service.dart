@@ -1,4 +1,3 @@
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PreferencesService {
@@ -40,5 +39,14 @@ class PreferencesService {
   String? getString(String key) {
     return _prefs?.getString(key);
   }
-}
 
+  // Ejemplo de un método para guardar un valor string
+  Future<void> saveBool(String key, bool value) async {
+    await _prefs?.setBool(key, value);
+  }
+
+  // Ejemplo de un método para obtener un valor string
+  bool? getBool(String key) {
+    return _prefs?.getBool(key);
+  }
+}

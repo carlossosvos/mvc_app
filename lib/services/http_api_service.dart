@@ -28,7 +28,9 @@ class HttpApiService {
   }) async {
     final response = await http.post(
       Uri.parse('$baseUrl$endpoint'),
-      headers: {"Content-Type": "application/json"},
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: json.encode(data),
     );
 
