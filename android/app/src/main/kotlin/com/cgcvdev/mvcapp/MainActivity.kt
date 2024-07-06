@@ -1,4 +1,4 @@
-package com.example.mvc_app
+package com.cgcvdev.mvcapp
 
 import io.flutter.embedding.android.FlutterActivity
 
